@@ -1,0 +1,13 @@
+1) Algoritmo de soma de dois números: um algoritmo simples que pede dois números como entrada e retorna a soma desses dois números.
+
+var
+a, b, soma: real
+algoritmo
+  leia(a)
+  leia(b)
+  soma = a + b
+  escreva(soma)
+fimalgoritmo
+
+
+2)
