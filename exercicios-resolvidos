@@ -1,13 +1,23 @@
 1) Algoritmo de soma de dois números: um algoritmo simples que pede dois números como entrada e retorna a soma desses dois números.
 
-var
-a, b, soma: real
-algoritmo
-  leia(a)
-  leia(b)
-  soma = a + b
-  escreva(soma)
-fimalgoritmo
+leia A
+leia B
+soma = A + B
+escreva soma
+fim
 
+2) Algoritmo de conversão de temperatura: um algoritmo que converte uma temperatura em Celsius para Fahrenheit ou vice-versa.
 
-2)
+leia temperatura
+leia unidade
+se unidade = C entao
+  F = (C * 1.8) + 32 
+  escreva F
+  se unidade = F entao
+    C = (F + 32) / 1.8
+    escreva C
+    senao
+      escreva Error
+  fimse
+fimse
+
