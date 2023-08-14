@@ -58,9 +58,32 @@ enquanto item != elementoLista faça
 leia numero
 leia expoente
 var contador = 1
-enquanto expoente > contador
+var resultado = 1
+enquanto expoente > contador faça
+  resultado = resultado * numero
+  contador = contador + 1
+escreva resultado
 
 7) Algoritmo de verificação de número primo: um algoritmo que verifica se um número é primo, ou seja, se é divisível apenas por 1 e por ele mesmo.
+
+
+
 8) Algoritmo de cálculo de área de um triângulo: um algoritmo que calcula a área de um triângulo com base na base e altura fornecidas.
+
+leia base
+leia altura
+area = (base * altura)/2
+escreva area
+
 9) Algoritmo de cálculo de juros compostos: um algoritmo que calcula o montante de dinheiro após um período de tempo com juros compostos.
+
+leia valor
+leia tempo
+leia juros
+var contador = 0
+enquanto tempo > contador faça
+  contador = contador + 1
+  valor = valor + valor * juros
+escreva Após tempo você terá valor
+
 10) Algoritmo de cálculo de média ponderada: um algoritmo que calcula a média ponderada de uma lista de números com base nos pesos fornecidos.
