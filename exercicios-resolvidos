@@ -92,3 +92,13 @@ enquanto tempo > contador faça
 escreva Após tempo você terá valor
 
 10) Algoritmo de cálculo de média ponderada: um algoritmo que calcula a média ponderada de uma lista de números com base nos pesos fornecidos.
+leia lista
+leia quantidade
+var contador = 0
+var soma = 0
+enquanto lista > contador faça
+  contador = contador + 1
+  leia item
+  soma = soma + item
+media = soma / quantidade
+escreva media
