@@ -43,15 +43,25 @@ escreva fatorial
 
 5) Algoritmo de busca linear: um algoritmo que procura por um determinado elemento em uma lista, verificando cada elemento da lista até encontrá-lo.
 
-leia lista
-leia quantiade
-leia item
-var contador = 1
-enquanto item != elementoLista faça
-  próximo elemento
-  contador = contador + 1
-  se contador = quantidade entao
-    escreva Item não encontrado
+//leia lista
+//leia quantiade
+//leia item
+//var contador = 1
+//enquanto item != elementoLista faça
+  //próximo elemento
+  //contador = contador + 1
+  //se contador = quantidade entao
+    //escreva Item não encontrado
+
+ler lista
+ler x
+para cada elemento da lista faça:
+  se elemento == x, então:
+    escreva Encontrei x
+    fim
+  fim-se
+fim-para
+escreva Não encontrei x
 
 6) Algoritmo de cálculo de potência: um algoritmo que calcula a potência de um número, elevando-o a uma determinada potência.
 
@@ -73,6 +83,15 @@ senao
   escreva Não é um número primo
 fimse
 
+ler x
+para cada numero entre 2 e x-1, faça:
+  se o resto da divisão entre x e o numero for 0, então:
+    escreva x não é primo
+    fim
+  fim-se
+fim-para
+escreva x é primo
+
 8) Algoritmo de cálculo de área de um triângulo: um algoritmo que calcula a área de um triângulo com base na base e altura fornecidas.
 
 leia base
@@ -89,7 +108,17 @@ var contador = 0
 enquanto tempo > contador faça
   contador = contador + 1
   valor = valor + valor * juros
-escreva Após tempo você terá valor
+escreva Após tempo você terá valor reais
+
+ler capital
+ler taxa_juros
+ler tempo
+x = 1 + taxa_juros
+para cada número entre 1 e tempo, faça:
+  x = x * x
+fim-para
+M = capital * x
+escreva M
 
 10) Algoritmo de cálculo de média ponderada: um algoritmo que calcula a média ponderada de uma lista de números com base nos pesos fornecidos.
 leia lista
@@ -101,4 +130,16 @@ enquanto lista > contador faça
   leia item
   soma = soma + item
 media = soma / quantidade
+escreva media
+
+ler lista_valores
+ler lista_pesos
+para cada numero da lista_valores, faça:
+  soma = soma + (numero * peso_respectivo)
+fim-para
+var soma_peso = 0
+para cada numero da lista_peso, faça:
+  soma_peso = soma_peso + numero
+fim-para
+media = soma / soma_peso
 escreva media
